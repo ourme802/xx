@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pytanko walentykowe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="container"></div> <!-- Kontener na serduszka -->
+    
+    <div id="wynik" class="pytanie ukryj">
+        <p class="przesunWdol"><p>Spotkajmy się 14.02 o godzinie: <span id="tekstOdpowiedzi"></span></p>
+        <p> (zrób screena i mi wyślij) </p>
+
+    </div>
+    
+   
+    <!-- Pytanie o godzine -->
+     <div id="pytaniegodzina" class="pytanie ukryj">
+        <p>To o której godzince się widzimy?</p>
+        <input type="time" id="odpowiedzUzytkownika" required>
+        <button id="btnOdpowiedz">Odpowiedz</button>
+    </div>  
+
+    
+    <!-- Pytanie o spotkanie 14.02 -->
+       <div id="pytanieMeeting" class="pytanie ukryj">
+        <p>Meeting 14.02?</p>
+        <button id="meetingTak">Tak</button>
+        <button id="meetingNie">Nie</button>
+    </div>
+
+    <!-- Pytanie o Walentynki -->
+    <div id="pytanieWalentynka" class="pytanie aktywne">
+        <p>Czy zostaniesz moją Walentynką Wiktrio?</p>
+        <button id="btnTak">Tak</button>
+        <button id="btnNie">Nie</button>
+    </div>
+    
+    
+   <script src="script.js"></script>
+</body>
+</html>
